@@ -53,8 +53,8 @@
                 <p class="artigo-autor">Por: Bryan Leonardo</p>
                 <p>que se sintam acolidos e livre a dar suas propria opinioes sobre o</p>
                 <button>​​​♥️​ <span>0</span></button>
-                <button>​​​👎​​ <span>0</span></button>
                 <button>​​​👍​​​ <span>0</span></button>
+                <button>​​​👎​​ <span>0</span></button>
             </div>
         </article>
         <article>
@@ -65,8 +65,8 @@
                 <p class="artigo-autor">Por: Bryan Leonardo</p>
                 <p>que se sintam acolidos e livre a dar suas propria opinioes sobre o</p>
                 <button>​​​♥️​ <span>0</span></button>
-                <button>​​​👎​​ <span>0</span></button>
                 <button>​​​👍​​​ <span>0</span></button>
+                <button>​​​👎​​ <span>0</span></button>
             </div>
         </article>
     </main>
@@ -75,11 +75,15 @@
     const botoes = document.querySelectorAll("button"); //esse código é oque que cria a função do botão//
 
     botoes.forEach(function (botao) {
+        let curtiu = false;
         botao.addEventListener("click", botaoClicando);//esse faz adicionar um evento de click quando o botão criado for clicado//
         function botaoClicando() {
             console.log("fui clicado");
             let texto = botao.querySelector("span");
-            texto.textContent++;
+            if (curtiu === false){
+                texto.textContent++;
+                curtiu = true;
+            }
         }
     }
     )
