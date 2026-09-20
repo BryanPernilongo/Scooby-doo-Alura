@@ -50,9 +50,9 @@
     </main>
 </body>
 <script>
-    const botoes = document.querySelector("button"); //esse código é oque que cria a função do botão//
+    const botoes = document.querySelectorAll("button"); //esse código é oque que cria a função do botão//
 
-    botoes.forEach( function(botao){
+    botoes.forEach(function(botao){
         botao.addEventListener("click", botaoClicando);//esse faz adicionar um evento de click quando o botão criado for clicado//
         function botaoClicando(){
             console.log("fui clicado");
