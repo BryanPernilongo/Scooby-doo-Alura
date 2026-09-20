@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scooby-Doo games</title>
     <style>
-        header{
+        header {
             background-color: #ACC8E5;
             color: #112A46;
             text-align: center;
@@ -14,6 +15,7 @@
             padding: 16px;
             border: 5px solid #22ddcd
         }
+
         main {
             background-color: #FFFFFF;
             color: #4F1404;
@@ -22,15 +24,18 @@
             padding: 16px;
             display: flex;
         }
-        img{
+
+        img {
             width: 100px;
             height: 100px;
         }
+
         .artigo-autor {
             font-weight: bold;
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Meu blog pessoal de games</h1>
@@ -38,40 +43,43 @@
     </header>
     <main>
         <article>
-            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-w2y8VANP7pJQfgg58ul6pj_eCd2vqrVBP15ueUSKIPqFt1oE" alt="Ilustracao em estilo cartoon de um cachorro marrom parecido com o Scooby-Doo usando um headset gamer azul. Ao fundo, um círculo neon com circuitos tecnológicos e um joystick retro.">
-            <div> 
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-w2y8VANP7pJQfgg58ul6pj_eCd2vqrVBP15ueUSKIPqFt1oE"
+                alt="Ilustracao em estilo cartoon de um cachorro marrom parecido com o Scooby-Doo usando um headset gamer azul. Ao fundo, um círculo neon com circuitos tecnológicos e um joystick retro.">
+            <div>
                 <h2> Meu primeiro Post</h2>
                 <p class="artigo-autor">Por: Bryan Leonardo</p>
                 <p>que se sintam acolidos e livre a dar suas propria opinioes sobre o</p>
                 <button>​​​♥️​ <span>0</span></button>
-                <button>​​​👎​​ <span>0</span></button> 
+                <button>​​​👎​​ <span>0</span></button>
             </div>
-             <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-w2y8VANP7pJQfgg58ul6pj_eCd2vqrVBP15ueUSKIPqFt1oE" alt="Ilustracao em estilo cartoon de um cachorro marrom parecido com o Scooby-Doo usando um headset gamer azul. Ao fundo, um círculo neon com circuitos tecnológicos e um joystick retro.">
-            <div> 
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-w2y8VANP7pJQfgg58ul6pj_eCd2vqrVBP15ueUSKIPqFt1oE"
+                alt="Ilustracao em estilo cartoon de um cachorro marrom parecido com o Scooby-Doo usando um headset gamer azul. Ao fundo, um círculo neon com circuitos tecnológicos e um joystick retro.">
+            <div>
                 <h2> Meu primeiro Post</h2>
                 <p class="artigo-autor">Por: Bryan Leonardo</p>
                 <p>que se sintam acolidos e livre a dar suas propria opinioes sobre o</p>
                 <button>​​​♥️​ <span>0</span></button>
-                <button>​​​👎​​ <span>0</span></button> 
+                <button>​​​👎​​ <span>0</span></button>
             </div>
         </article>
-       
+
     </main>
 </body>
 <script>
     const botoes = document.querySelectorAll("button"); //esse código é oque que cria a função do botão//
 
-    botoes.forEach(function(botao){
+    botoes.forEach(function (botao) {
         botao.addEventListener("click", botaoClicando);//esse faz adicionar um evento de click quando o botão criado for clicado//
-        function botaoClicando(){
+        function botaoClicando() {
             console.log("fui clicado");
             let texto = botao.querySelector("span");
             texto.textContent++;
         }
     }
-)
+    )
 
 
 
 </script>
+
 </html>
