@@ -13,6 +13,8 @@
             --cor--texto: #3B1152;
             --cor--botao: #E6BBFF;
             --cor--contraste: #F4E0FF;
+
+            --fonte--texto: 'Verdana', sans-serif;
         }
         .tema-escuro{
             --cor--primaria: #EED5B9;
@@ -23,11 +25,20 @@
             --cor--contraste: #0B1F00;
         }
         .tema-escuro a {
-            color: var(--cor--secundaria)
+            color: var(--cor--secundaria);
+        }
+
+        .tema-escuro p {
+            color: var(--cor--contraste);
+        }
+
+        .tema-escuro header p {
+            color: var(--cor--contraste);
         }
 
         body{
             max-width: 100vw;
+            font-family: var(--fonte--texto)
         }
         header {
             background-color: var(--cor--primaria);
