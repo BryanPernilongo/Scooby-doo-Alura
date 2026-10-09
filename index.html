@@ -167,7 +167,18 @@
         }
     })
 
+const btnTemaEscuro = document.querySelector(".btn-tema-escuro"); //esse código é oque que cria a função do botão//
 
+btnTemaEscuro.addEventListener("click", mudaOsTemas);//esse faz adicionar um evento de click quando o botão criado for clicado fazendo ele mudar de tema entre escuro e claro//
+
+function mudaOsTemas(){
+    const corpoPagina = document.body;
+    if(corpoPagina.classList.contains("tema-escuro")) {
+        corpoPagina.classList.remove("tema-escuro");
+    } else {
+        corpoPagina.classList.add("tema-escuro");
+    }
+}
 
 </script>
 
